@@ -23,8 +23,16 @@ Coba perhatikan Goa dibawah ini :
 pilihanUser = int (input("Menurutmu dimana tupai berada? [1 / 2 / 3 / 4 ]: "))
 # apapun yang di masukan kedalam input bernilai string kecuali di validasi
 
-print(f"pilihan kamu adalah {pilihanUser}")
+validasi_pilihan = input (f"apakah kamu yakin jawabanya adalah {pilihanUser}? [y/n] : ")
 
-if pilihanUser == tupai_position:
-    print("Selamat anda benar!")
-else: print(f"Pilihan anda salah! tupai berada di goa {tupai_position}.")
+if validasi_pilihan == "y":
+    if pilihanUser == tupai_position:
+         print("Selamat anda benar!")
+    else: 
+         print(f"Pilihan anda salah! tupai berada di goa {tupai_position}.")
+elif validasi_pilihan == "n":
+    print("oke, program ditutup!")
+    exit()
+else :
+    print("program eror! silahkan pilih [y/n]")
+    exit()
