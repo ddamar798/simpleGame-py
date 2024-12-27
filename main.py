@@ -24,6 +24,10 @@ goa_kosong = " ".join(goa_kosong) # .join digunakan untuk menhilangkan tanda arr
 goa = " ".join(goa)
  
 namaUser = input("masukan namamu :")
+while namaUser== "":
+    namaUser = input("isi nama dulu!😠 :")
+    
+
 print(f'''
 Haii {namaUser}!
 Coba perhatikan Goa dibawah ini :
