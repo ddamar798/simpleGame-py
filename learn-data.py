@@ -2,3 +2,4 @@
 kardus = ["ikan","ayam","wortel","jeruk"]
 print (kardus[5-2])
 print (kardus[0])
+print (kardus[1])
